@@ -20,13 +20,13 @@ gulp.task('css', function() {
         .pipe(concat('app.less'))
         .pipe(less())
         .pipe(autoprefixer())
-        //.pipe(csso())
+        .pipe(csso())
         .pipe(gulp.dest('build/css/'))
         .pipe(livereload());
 });
 
 gulp.task('icons-fonts', function() {
-    gulp.src('css/icons/font/Flaticon*')
+    gulp.src('src/css/icons/font/Flaticon*')
         .pipe(gulp.dest('build/css/'))
 });
 
