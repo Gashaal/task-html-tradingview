@@ -1,0 +1,4 @@
+# Gulp build
+/node_modules/
+/build/
+/bower_components/
