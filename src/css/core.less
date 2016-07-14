@@ -1,3 +1,11 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f7f9fa;
+}
+
 [class*=" flaticon-"]:after, 
 [class*=" flaticon-"]:before, 
 [class^=flaticon-]:after, 
@@ -6,15 +14,17 @@
     font-size: 1em;
 }
 
-.bold {
-    font-weight: bold;
+.l-table-people-container {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 .table-people {
-    width: 960px;
-    margin: 0 auto;
-    margin-top: 20px;
-    border: 1px solid #d7d8d8;
+    width: 100%;
+    border-left: 1px solid #d7d8d8;
+    border-right: 1px solid #d7d8d8;
+    border-top: 1px solid #d7d8d8;
     border-spacing: 0px;
     border-radius: 2px;
 
@@ -50,6 +60,7 @@
 
 .table-people__name {
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .table-people__cell-value {
@@ -75,4 +86,21 @@
 
 .person-info__is-follow {
     color: #b6b6b6;
+}
+
+.show-more {
+    margin: 0 auto;
+    margin-top: -1px;
+    padding: 8px 25px;
+    display: block;
+    text-align: center;
+    font-size: 0.65em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #6b6b6b;
+    background: white;
+    border: 1px solid #d7d8d8;
+    border-top: 1px dashed #d7d8d8;
+    outline: none;
+    cursor: pointer;
 }
