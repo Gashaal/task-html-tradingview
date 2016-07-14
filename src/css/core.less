@@ -3,12 +3,18 @@
 [class^=flaticon-]:after, 
 [class^=flaticon-]:before {
     margin-left: 0px;
+    font-size: 1em;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .table-people {
     width: 960px;
     margin: 0 auto;
-    border: 1px solid #D7D8D8;
+    margin-top: 20px;
+    border: 1px solid #d7d8d8;
     border-spacing: 0px;
     border-radius: 2px;
 
@@ -18,16 +24,55 @@
     }
 
     thead {
-        background: #ECF0F3;
-        border-bottom: 1px solid #E3E5E8;
-
-        td {
-            text-align: right;
-            padding: 5px 10px;
-        }
+        background: #ecf0f3;
+        border-bottom: 1px solid #e3e5e8;
     }
 
     td {
         border-bottom: 1px solid #e3e5e8;
+        text-align: right;
+        padding: 5px 10px;
+        width: 20%;
+
+        &:first-child {
+            text-align: left;
+            padding: 5px;
+            width: 44%;
+        }
     }
+
+    tbody {
+        tr:nth-child(odd) {
+            background-color: #fbfbfb;
+        }
+    }
+}
+
+.table-people__name {
+    font-weight: bold;
+}
+
+.table-people__cell-value {
+    font-size: 1.2em;
+    color: #6b6b6b;
+    font-weight: bold;
+}
+
+.person-info__avatar {
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
+}
+
+.person-info__name {
+    margin-right: 5px;
+    color: #4c8cd0;
+}
+
+.person-info__add-to-follow {
+    color: #a4c574;
+}
+
+.person-info__is-follow {
+    color: #b6b6b6;
 }

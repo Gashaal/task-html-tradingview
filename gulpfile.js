@@ -12,7 +12,7 @@ var cssSrc = [
     'bower_components/normalize-css/normalize.css',
     'src/css/icons/font/flaticon.css',
     'src/css/*.less',
-    'bower_components/flexbox-set/dist/flexbox-set.css'
+    'bower_components/flexbox-set/dist/flexbox-css.css'
 ];
 
 gulp.task('css', function() {

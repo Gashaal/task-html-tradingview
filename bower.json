@@ -17,6 +17,9 @@
   ],
   "dependencies": {
     "normalize-css": "^4.2.0",
-    "flexbox-set": "https://github.com/Gashaal/flexbox-set.git#^0.0.1"
+    "flexbox-set": "https://github.com/Gashaal/flexbox-set.git#0.1"
+  },
+  "resolutions": {
+    "flexbox-set": "^0.0.1"
   }
 }
