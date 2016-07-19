@@ -15,9 +15,9 @@ body {
 }
 
 .l-table-people-container {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 20px 0px;
 }
 
 .table-people {
@@ -52,6 +52,10 @@ body {
     }
 
     tbody {
+        tr {
+            background-color: white; 
+        }
+
         tr:nth-child(odd) {
             background-color: #fbfbfb;
         }
@@ -77,30 +81,47 @@ body {
 
 .person-info__name {
     margin-right: 5px;
+    min-height: 19px;
     color: #4c8cd0;
 }
 
+.l-icons-bittons:hover .l-buttons {
+    display: block;
+}
+
+.l-icons-bittons:hover .l-icons {
+    display: none;
+}
+
 .person-info__add-to-follow {
-    color: #a4c574;
+    color: #b6b6b6;
 }
 
 .person-info__is-follow {
     display: none;
-    color: #b6b6b6;
+    color: #a4c574;
 }
 
 .l-buttons {
     display: none;
+}
+
+.person-info__follow,  .person-info__unfollow {
+    display: block;
+    cursor: pointer;
     font-size: 0.75em;
     color: white;
-    background-color: #a4c574;
     padding: 1px 8px;
     border-radius: 8px;
 }
 
-.person-info__follow,  .person-info__unfollow {
+.person-info__follow {
+    background-color: #a4c574;
+}
+
+.person-info__unfollow {
     display: none;
-    cursor: pointer;
+    background-color: #ce635d;
 }
 
 .show-more {

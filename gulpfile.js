@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     livereload = require('gulp-livereload'),
+    imagemin = require('gulp-imagemin'),
     less = require('gulp-less');
 
 var cssSrc = [
@@ -27,14 +28,20 @@ gulp.task('css', function() {
 
 gulp.task('icons-fonts', function() {
     gulp.src('src/css/icons/font/Flaticon*')
-        .pipe(gulp.dest('build/css/'))
+        .pipe(gulp.dest('build/css/'));
 });
+
+gulp.task('images', function() {
+    gulp.src('src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('build/images'));
+})
 
 gulp.task('watch', function() {
     livereload.listen();
     gulp.watch(cssSrc, ['css']);
 })
 
-gulp.task('default', ['icons-fonts', 'css', 'watch']);
+gulp.task('default', ['icons-fonts', 'css', 'images','watch']);
 
 
