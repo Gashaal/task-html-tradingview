@@ -1,0 +1,25 @@
+{
+  "name": "task-html-tradingview",
+  "authors": [
+    "Daychenko R. antinaar@gmail.com"
+  ],
+  "description": "test task for TradingView company",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^4.2.0",
+    "flexbox-set": "https://github.com/Gashaal/flexbox-set.git#0.1"
+  },
+  "resolutions": {
+    "flexbox-set": "^0.0.1"
+  }
+}

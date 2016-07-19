@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f7f9fa;
+}
+
+[class*=" flaticon-"]:after, 
+[class*=" flaticon-"]:before, 
+[class^=flaticon-]:after, 
+[class^=flaticon-]:before {
+    margin-left: 0px;
+    font-size: 1em;
+}
+
+.l-table-people-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.table-people {
+    width: 100%;
+    border-left: 1px solid #d7d8d8;
+    border-right: 1px solid #d7d8d8;
+    border-top: 1px solid #d7d8d8;
+    border-spacing: 0px;
+    border-radius: 2px;
+
+    caption {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    thead {
+        background: #ecf0f3;
+        border-bottom: 1px solid #e3e5e8;
+    }
+
+    td {
+        border-bottom: 1px solid #e3e5e8;
+        text-align: right;
+        padding: 5px 10px;
+        width: 20%;
+
+        &:first-child {
+            text-align: left;
+            padding: 5px;
+            width: 44%;
+        }
+    }
+
+    tbody {
+        tr {
+            background-color: white; 
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fbfbfb;
+        }
+    }
+}
+
+.table-people__name {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table-people__cell-value {
+    font-size: 1.2em;
+    color: #6b6b6b;
+    font-weight: bold;
+}
+
+.person-info__avatar {
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
+}
+
+.person-info__name {
+    margin-right: 5px;
+    min-height: 19px;
+    color: #4c8cd0;
+}
+
+.l-icons-bittons:hover .l-buttons {
+    display: block;
+}
+
+.l-icons-bittons:hover .l-icons {
+    display: none;
+}
+
+.person-info__add-to-follow {
+    color: #b6b6b6;
+}
+
+.person-info__is-follow {
+    display: none;
+    color: #a4c574;
+}
+
+.l-buttons {
+    display: none;
+}
+
+.person-info__follow,  .person-info__unfollow {
+    display: block;
+    cursor: pointer;
+    font-size: 0.75em;
+    color: white;
+    padding: 1px 8px;
+    border-radius: 8px;
+}
+
+.person-info__follow {
+    background-color: #a4c574;
+}
+
+.person-info__unfollow {
+    display: none;
+    background-color: #ce635d;
+}
+
+.show-more {
+    margin: 0 auto;
+    margin-top: -1px;
+    padding: 8px 25px;
+    display: block;
+    text-align: center;
+    font-size: 0.65em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #6b6b6b;
+    background: white;
+    border: 1px solid #d7d8d8;
+    border-top: 1px dashed #d7d8d8;
+    outline: none;
+    cursor: pointer;
+}
